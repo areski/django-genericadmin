@@ -12,7 +12,7 @@
     var GenericAdmin = {
         url_array: null,
         fields: null,
-        obj_url: "../obj-data/",
+        obj_url: "../../obj-data/",
         admin_media_url: window.__admin_media_prefix__,
 		popup: '_popup',
         
@@ -306,7 +306,7 @@
 
     $(document).ready(function() {
         $.ajax({
-            url: '../genericadmin-init/',
+            url: '../../genericadmin-init/',
             dataType: 'json',
             success: function(data) {
                 var url_array = data.url_array,
